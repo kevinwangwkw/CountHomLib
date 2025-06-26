@@ -7,7 +7,7 @@ This C++ library computes the number of graph homomorphisms between two graphs H
 <br><br>The complexity of this algorithm is polynomial to the treewdith of the NTD - O(poly(|V(H)|)\*|V(G)|^{tw(H)+1}). If H is a tree, the complexity becomes O(|V(H)|\*|E(G)|).
 <br><br>Pybind11 is used to run this library in a Python environment.
 
-## Usage
+## Usage (Standard Graphs)
 
 Define Graph by the number of vertices and add edges using addEdge:
 ````
@@ -66,6 +66,8 @@ print(countHom(H, G))
 ````
 5654308
 ````
+
+## Usage (Graphons)
 
 ## Installation
 
