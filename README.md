@@ -69,7 +69,7 @@ print(countHom(H, G))
 ## Installation
 
 ````
-git clone https://github.com/kevinwangwkw/CountHom
+git clone https://github.com/kevinwangwkw/CountHomLib
 pip3 install ./CountHom
 ````
 
