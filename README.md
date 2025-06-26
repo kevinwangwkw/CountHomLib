@@ -69,6 +69,11 @@ print(countHom(H, G))
 
 ## Usage (Graphons)
 
+Define Graphon by a weighted adjacency matrix:
+````
+from homlib import Graphon, countHomGraphon
+````
+
 ## Installation
 
 ````
