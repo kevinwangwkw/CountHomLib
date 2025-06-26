@@ -79,5 +79,5 @@ LDFLAGS="-L$(brew --prefix llvm)/lib" \
 CPPFLAGS="-I$(brew --prefix llvm)/include" \
 CC="$(brew --prefix llvm)/bin/clang" \
 CXX="$(brew --prefix llvm)/bin/clang++" \
-pip3 install ./CountHom
+pip3 install ./CountHomLib
 ````
