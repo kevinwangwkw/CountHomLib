@@ -3,7 +3,7 @@
 ## Description
 
 This C++ library computes the number of graph homomorphisms between two graphs H and G using Diaz, Serna and Thilikos's dynamic programming algorithm on a nice tree decomposition. Greedy heuristics are used to find a tree decomposition. 
-<br>This library also implements for the Graphon version in which we represent G as a weighted graph.
+<br><br>This library also supports the Graphon version in which we represent G as a weighted graph.
 <br><br>The complexity of this algorithm is polynomial to the treewdith of the NTD - O(poly(|V(H)|)\*|V(G)|^{tw(H)+1}). If H is a tree, the complexity becomes O(|V(H)|\*|E(G)|).
 <br><br>Pybind11 is used to run this library in a Python environment.
 
