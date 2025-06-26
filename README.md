@@ -27,7 +27,7 @@ print(countHom(H, G))
 ````
 12
 ````
-<br>Define Graph by the adjacency list:
+<br>Define Graph by the adjacency matrix:
 ````
 from homlib import Graph, countHom
 
