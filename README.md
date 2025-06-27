@@ -71,15 +71,59 @@ print(countHom(H, G))
 
 Define Graphon by a weighted adjacency matrix:
 ````
-from homlib import Graphon, countHomGraphon
+from homlib import Graph, Graphon, countHomGraphon
+
+H = Graph([
+    [0, 0, 0, 0, 0, 0, 0, 1, 1, 1],
+    [0, 0, 0, 0, 0, 1, 0, 0, 1, 1],
+    [0, 0, 0, 0, 0, 1, 1, 0, 0, 1],
+    [0, 0, 0, 0, 0, 1, 1, 1, 0, 0],
+    [0, 0, 0, 0, 0, 0, 1, 1, 1, 0],
+    [0, 1, 1, 1, 0, 0, 0, 0, 0, 0],
+    [0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
+    [1, 0, 0, 1, 1, 0, 0, 0, 0, 0],
+    [1, 1, 0, 0, 1, 0, 0, 0, 0, 0],
+    [1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+])
+
+G = Graphon([
+ [0.5, 0.88, 0.6, 0.99],
+ [0.88, 0.3, 0.21, 0.34],
+ [0.6, 0.21, 0.2, 0.78],
+ [0.99, 0.34, 0.78, 0.14]
+])
+
+print(countHomGraphon(H, G))
+````
+
+````
+0.00036733029704778646
 ````
 
 ## Helper Functions
 Get greedy treewidth of a graph from its adjacency matrix:
 ````
 from homlib import treewidth
+
+tw = treewidth([
+    [0, 0, 0, 0, 0, 0, 0, 1, 1, 1],
+    [0, 0, 0, 0, 0, 1, 0, 0, 1, 1],
+    [0, 0, 0, 0, 0, 1, 1, 0, 0, 1],
+    [0, 0, 0, 0, 0, 1, 1, 1, 0, 0],
+    [0, 0, 0, 0, 0, 0, 1, 1, 1, 0],
+    [0, 1, 1, 1, 0, 0, 0, 0, 0, 0],
+    [0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
+    [1, 0, 0, 1, 1, 0, 0, 0, 0, 0],
+    [1, 1, 0, 0, 1, 0, 0, 0, 0, 0],
+    [1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+])
+
+print(tw)
 ````
 
+````
+4
+````
 
 ## Installation
 
