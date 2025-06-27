@@ -100,6 +100,15 @@ print(countHomGraphon(H, G))
 0.00036733029704778646
 ````
 
+Normalisation could also be turned off for certain applications:
+````
+print(countHomGraphon(H, G, normalise = False))
+````
+
+````
+385.17373355717973
+````
+
 ## Helper Functions
 Get greedy treewidth of a graph from its adjacency matrix:
 ````
