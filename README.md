@@ -74,7 +74,7 @@ Define Graphon by a weighted adjacency matrix:
 from homlib import Graphon, countHomGraphon
 ````
 
-## Help Functions
+## Helper Functions
 Get greedy treewidth of a graph from its adjacency matrix:
 ````
 from homlib import treewidth
