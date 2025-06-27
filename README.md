@@ -85,7 +85,7 @@ from homlib import treewidth
 
 ````
 git clone https://github.com/kevinwangwkw/CountHomLib
-pip3 install ./CountHom
+pip3 install ./CountHomLib
 ````
 
 <br>Note: if there is a ````fatal error: 'omp.h' file not found```` error, try ````brew install llvm```` then copy and paste the following entire block of code into the terminal:
